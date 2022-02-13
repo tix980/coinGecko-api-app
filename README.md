@@ -1,6 +1,6 @@
 # Coingecko public API React Project
 
-##Project Description
+## Project Description
 The project takes data from the Coingecko public API and presents the top 10 crypto exchange platforms on the homepage. Users can choose the exchange platform of their choice to view their details.
 
 ## Available Scripts
