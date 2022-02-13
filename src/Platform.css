@@ -1,0 +1,52 @@
+.App-detail{
+    text-align: left;
+}
+
+/* ROW CSS */
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.col-md-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
+
+.col-md-8 {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+}
+
+.desc-tag{
+    color:rgb(130, 211, 24);
+    padding-right: 0.5em;
+}
+
+.detail-info a:hover{
+    color: gray;
+}
+
+
+
+@media (max-width: 48em){
+    .App-detail-header{
+        padding-left: 3em;
+    }
+
+
+    .platform-name{
+        font-size: 2em !important;
+        margin-bottom: 1em;
+    }
+
+    .col-md-8, .col-md-4{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-.App-header {
+.App-header, .App-detail-header {
   margin-right: auto;
   margin-left: auto;
   background-color: #282c34;
@@ -19,6 +19,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.detail-row {
+  padding-top: 2em;
 }
 
 .url a{
@@ -44,25 +48,6 @@ a:hover{
 }
 
 
-
-
-.row {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
-}
 
 @media (max-width: 48em){
   table{
