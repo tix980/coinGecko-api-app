@@ -1,8 +1,11 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 
 .App-header {
+  margin-right: auto;
+  margin-left: auto;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -11,6 +14,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow-x:auto !important;
 }
 
 .App-link {
@@ -23,5 +27,54 @@
 }
 
 .url a:hover{
-  color: gray;
+  color:rgb(130, 211, 24) ;
+}
+
+.icon-and-name{
+  padding-top: 1.5em;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color:rgb(130, 211, 24) ;
+}
+
+
+
+
+.row {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+@media (max-width: 48em){
+  table{
+    padding-left: 15em;
+  }
+
+  h1{
+    width: 100%;
+  }
+
+  th{
+    padding-right: 2em;
+  }
+
 }

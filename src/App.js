@@ -17,8 +17,8 @@ function ExchangeList() {
 				<td>{platform.trust_score_rank}</td>
 
 				<Link to={`/${platform.id}`}>
-					<td><img src={platform.image} alt={platform.name}/>
-					<span>{platform.name}</span></td>
+					<td className="icon-and-name"><img src={platform.image} alt={platform.name}/>
+					<div>{platform.name}</div></td>
 				</Link>
 				<td>{platform.trust_score}</td>
 				<td>{platform.country}</td>

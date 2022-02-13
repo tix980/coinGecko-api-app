@@ -1,20 +1,21 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, Link} from "react-router-dom";
 
 
 
 function Platform() {
-	//ACCESS THE SELECTED PLATFORM'S PARAMETERS
-	let params = useParams();
 
 	//DECLARE DETAIL DATA STATE VARIABLE
 	const [detailData, setDetailData] = useState([]);
 
+	//ACCESS THE SELECTED PLATFORM'S PARAMETERS
+	let params = useParams();
 
 	//FETCH THE COINGECKO API AND ACCESS THE SELECTED EXCHANGE PLATFORM INFORMATION
 	// WITH SELECTED PLATFORM ID
 	useEffect(() => {
+
 		{
 			let requestOptions = {
 				method: 'GET',
@@ -26,11 +27,15 @@ function Platform() {
 				.then(result => setDetailData(result))
 				.catch(error => console.log('error', error));
 		}
-	}, [detailData]);
+	}, []);
 
 	//DISPLAY THE SELECTED PLATFORM INFORMATION
 	const selectedExchangeDetail =
 		<div>
+			<nav>
+				<Link to="/">Home</Link>
+
+			</nav>
 			<h1>{detailData.id} Detail Page</h1>
 			<div>{detailData.name}</div>
 			<div>{detailData.country}</div>
