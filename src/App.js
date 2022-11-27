@@ -10,6 +10,8 @@ function ExchangeList() {
 	// DEFINE THE TITLE OF THE LIST
 	const title = "Top 10 Crypto Exchange Platform";
 
+	const coins = ['bitcoin','matic-network'];
+
 
 	//RENDER EACH EXCHANGE INFO OBJECT IN THE TABLE BODY
 	const exchangeList = data.map(platform => (
